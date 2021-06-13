@@ -12,3 +12,12 @@ Of course, Hugo still requires some initial setup. Setting up Hugo itself is a b
 
 The Console theme makes home page editing really easy. Setting up the menu requires some parameters to be set in the config file. Tweaking the format of the main page required copying the theme index.html page to the project layouts directory and then making the changes. Changing the footer was easy too; just change the footer file directly in the theme directory. 
 
+## Deploying
+
+I used AWS Amplify for deployment. It made it super easy to deploy. All I had to do was link up my Github repo, and then configure the domain settings (under 'domain management') to use my Route53 domain. It automatically updates when I push code to the main branch. 
+
+## Trouble
+
+I didn't run into many problems during this project. The hardest one took 10-ish minutes to fix. I ran into a bug where Hugo wasn't showing my theme correctly, but that was because I didn't have the baseURL set correctly in my config file. Once that was solved, everything worked like a dream. 
+
+I'd recommend Hugo for anyone starting a blog. It even works with [Github Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/), if you don't want to pay for hosting. Although Amplify is free for the first year and 0.02 cents a month after that, you can't beat free. I probably would have used Github Pages if I didn't already have my old homepage on it already (I want to leave the old pages domain up to point to my new one). 
