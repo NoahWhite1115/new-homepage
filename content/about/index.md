@@ -5,7 +5,7 @@ date: 2021-06-11T22:06:54-07:00
 
 ## About me:
 
-I'm a software engineer from Sacramento, CA. I went to UC Davis. Now living in the Bay Area. I'm really interested in games and a whole bunch of other things. 
+I'm a software engineer from Sacramento, CA. I went to UC Davis. Now living in the Bay Area. I'm really interested in games, machine learning and a whole bunch of other things. 
 
 ## About this blog:
 

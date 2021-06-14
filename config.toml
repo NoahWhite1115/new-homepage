@@ -15,7 +15,3 @@ title = "WhitestElephant"
   [[params.navlinks]]
   name = "projects/"
   url = "projects/"
-
-  [[params.navlinks]]
-  name = "github/"
-  url = "https://github.com/NoahWhite1115"
