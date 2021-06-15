@@ -1,7 +1,7 @@
 ---
 title: "Fire Drills"
 date: 2021-06-14T20:01:00-07:00
-draft: true
+draft: false
 ---
 
 My team does "fire drills" once a month, so I thought I'd take some time to talk about what we do. 
