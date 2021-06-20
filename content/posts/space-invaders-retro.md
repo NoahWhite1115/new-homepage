@@ -1,7 +1,7 @@
 ---
 title: "Space Invaders Retrospective"
 date: 2021-06-19T19:13:49-07:00
-draft: true
+draft: false
 ---
 
 I decided to start a series of retrospective posts about previous projects I've worked on outside of school and work. This one will be about my Space Invaders game. I'm forking the code and placing it on a 'retrospective' branch, so if I decide to change main in the future it won't invalidate this code review. 
