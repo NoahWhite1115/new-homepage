@@ -1,18 +1,34 @@
 {{ define "main" }}
 
-<h1>Posts</h1>
+<h2>10 Most Recent Posts</h2>
 
 <div class="posts-list">
-{{ with .Site.GetPage "/posts" }}
+    {{ with .Site.GetPage "/posts" }}
     {{ range first 10 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
-        <div class="post">
-            <p>
-                <div class="date">{{ .PublishDate.Format "Jan 02 2006 " }}</div>
-                <p><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></p>
-            </p>
-        </div>    
+    <div class="post">
+        <p>
+        <div class="date">{{ .PublishDate.Format "Jan 02 2006 " }}</div>
+        <p><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></p>
+        </p>
+    </div>
     {{ end }}
-{{ end }}
+    {{ end }}
+</div>
+
+<br>
+
+<h2>Pinned Posts</h2>
+<div class="posts-list">
+    {{ with .Site.GetPage "/posts" }}
+    {{ range where .Pages ".Params.pinned" "==" true}}
+    <div class="post">
+        <p>
+        <div class="date">{{ .PublishDate.Format "Jan 02 2006 " }}</div>
+        <p><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></p>
+        </p>
+    </div>
+    {{ end }}
+    {{ end }}
 </div>
 
 {{ end }}

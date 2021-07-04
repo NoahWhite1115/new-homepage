@@ -1,20 +1,34 @@
 {{ define "main" }}
 <h1>{{ .Page.Title }}</h1>
-<br/>
-{{ .Content }}
+
+<br>
+
+<h2>Pinned Posts</h2>
+<div class="posts-list">
+    {{ range sort .Data.Pages "Date" "desc" }}
+    {{ if .Params.pinned }}
+    <div class="post">
+        <p>
+        <div class="date">{{ .PublishDate.Format "Jan 02 2006 " }}</div>
+        <p><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></p>
+        </p>
+    </div>
+    {{ end }}
+    {{ end }}
+</div>
+
+<br>
+<h2>All Posts</h2>
 
 <div class="posts-list">
-{{ range sort .Data.Pages "Date" "desc" }}
-    {{ if not .Params.private }}
-        <div class="post">
-            <p>
-                <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>    
-                <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-                {{ .Summary }}
-            </p>
-        </div>
+    {{ range sort .Data.Pages "Date" "desc" }}
+    <div class="post">
+        <p>
+        <div class="date">{{ .PublishDate.Format "Jan 02 2006 " }}</div>
+        <p><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></p>
+        </p>
+    </div>
     {{ end }}
-{{ end }}
 </div>
 
 {{ end }}

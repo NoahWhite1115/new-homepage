@@ -162,7 +162,6 @@ figure {
 
 .footer {
     clear: both;
-    margin-top: 100px;
     padding-top: 10px;;
     border-top: 1px solid var(--secondary-color);
     color: var(--global-font-color);
@@ -273,7 +272,6 @@ figure {
 
 
     .footer {
-        margin-top: 50px;
         padding-top: 5px;;
     }
 }
