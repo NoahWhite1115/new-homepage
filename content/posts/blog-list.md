@@ -18,7 +18,7 @@ This is a list of other people/pages in the technology field (and a few people o
 <br>
 
 - [Miguel Grinberg](https://blog.miguelgrinberg.com/index)
-    - The author of the [Flask Mega Tutorial]() has some great advice on Python development in general.
+    - The author of the [Flask Mega Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) has some great advice on Python development in general.
 
 <br>
 
